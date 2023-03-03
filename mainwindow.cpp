@@ -374,6 +374,7 @@ void MainWindow::on_radioButtonNet_clicked(bool checked)
         strProtocols.append("NGAP");
         strProtocols.append("XNAP");
         strProtocols.append("F1AP");
+        strProtocols.append("E1AP");
         ui->comboBoxProtocol->addItems(strProtocols);
     }
 }
