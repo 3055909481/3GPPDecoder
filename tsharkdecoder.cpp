@@ -41,12 +41,15 @@ void TSharkDecoder::startDecoder(QString strEncodedData, QString strProtocol)
     QLOG_DEBUG() << "startDecoder, Protocol:" << strProtocol;
     QString strData;
     QString strTsharkPath;
+    /*格式化码流*/
     strData = preformatData(strEncodedData);
     strTsharkPath = getTsharkPath();
     strTsharkPath.replace(" ","\" \"");
     QLOG_DEBUG() << strTsharkPath;
     format_file_for_text2pcap(strData);
+    /*码流转换为pcap文件*/
     call_text2pacp(strTsharkPath);
+    /*接码*/
     call_tshark(strTsharkPath, strProtocol);
     clean_output();
 }
