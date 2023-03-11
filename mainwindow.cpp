@@ -38,6 +38,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
     initLogger();
 
+        
 //    connect(_cmd , SIGNAL(readyReadStandardOutput()) , this , SLOT(on_readoutput()));
 //    connect(_cmd , SIGNAL(readyReadStandardError()) , this , SLOT(on_readerror()));
 }
