@@ -23,6 +23,7 @@ PreferenceDialog::PreferenceDialog(QWidget *parent) :
 {
     ui->setupUi(this);
     setDefaults();
+        
 }
 
 PreferenceDialog::~PreferenceDialog()
